@@ -13,8 +13,8 @@ A machine learning project to detect spam emails using multiple baseline models.
 UCI SMS Spam Collection Dataset
 
 ## Group Members
-- [Your Name]
-- [Groupmate Name]
+- Rasydan Irfan
+- Arun
 
 ## Project Structure
 - `data/` - Raw and processed datasets
