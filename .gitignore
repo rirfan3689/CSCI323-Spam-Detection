@@ -1,12 +1,21 @@
 # Python
 __pycache__/
 *.py[cod]
-*.ipynb_checkpoints
+*.ipynb_checkpoints/
 
-# Data
+# Data files
 *.csv
 *.zip
+*.tsv
 
 # Environment
 .env
 venv/
+*.egg-info/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Jupyter
+.ipynb_checkpoints/
