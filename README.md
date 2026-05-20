@@ -48,7 +48,5 @@ Run notebooks in the following order:
 - Sherry
   
 ## Project Structure
-- `data/` - Raw and processed datasets
 - `notebooks/` - Jupyter notebooks for each model
-- `results/` - Graphs, confusion matrices, metrics
-- `docs/` - References and documentation
+- `results/` - Pre-generated graphs and confusion matrices
