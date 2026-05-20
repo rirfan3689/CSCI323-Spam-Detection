@@ -15,7 +15,8 @@ UCI SMS Spam Collection Dataset
 ## Group Members
 - Rasydan Irfan
 - Arun
-
+- Sherry
+  
 ## Project Structure
 - `data/` - Raw and processed datasets
 - `notebooks/` - Jupyter notebooks for each model
