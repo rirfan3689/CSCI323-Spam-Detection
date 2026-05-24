@@ -90,8 +90,7 @@ tuning and feature importance on model performance.
     - Saves: `feature_importance_results.json`
 
 > **Note:** Pre-generated processed files and 
-> results are available on Google Drive:
-> 📁 Google Drive:
+> results are available on 📁 Google Drive:
 > 1. Dataset: https://drive.google.com/drive/folders/1r_E9ehREhlj2Ru8vNGiMpM_Vgk6NmDR-?usp=drive_link
 > 2. Code Output: https://drive.google.com/drive/folders/187_7veGTZ1chYtzgBRdeXbSS1bePYrq0?usp=drive_link
 
