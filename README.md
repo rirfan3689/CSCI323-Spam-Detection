@@ -13,18 +13,17 @@ tuning and feature importance on model performance.
 - Random Forest
 
 ## Datasets
-| Dataset | Domain | Size | Balance |
-|---------|--------|------|---------|
-| UCI SMS Collection | SMS | 5,169 | 87/13 |
-| SpamAssassin | Email | 5,329 | 67/33 |
+| Dataset | Domain | Size | Balance | Source |
+|---------|--------|------|---------|--------|
+| UCI SMS Collection | SMS | 5,169 | 87/13 | [UCI Repository](https://archive.ics.uci.edu/dataset/228/sms+spam+collection) |
+| SpamAssassin | Email | 5,329 | 67/33 | [Kaggle](https://www.kaggle.com/datasets/ganiyuolalekan/spam-assassin-email-classification-dataset) |
 
-> **Note on SpamAssassin:** This dataset was 
-> initially used as a second email dataset. 
-> Feature importance analysis revealed HTML tags 
-> and email headers were acting as unintended spam 
-> signals due to preprocessing limitations. Results 
-> are included as a finding on dataset quality and 
-> preprocessing importance.
+> **Note on SpamAssassin:** Initially used as a 
+> second email dataset. Feature importance analysis 
+> revealed HTML tags and email headers were acting 
+> as unintended spam signals due to preprocessing 
+> limitations. Results are included as a finding 
+> on dataset quality and preprocessing importance.
 
 ## Key Findings
 - SVM consistently outperformed other models
@@ -72,13 +71,14 @@ tuning and feature importance on model performance.
 
 > ⚠️ SpamAssassin results should be interpreted 
 > with caution due to HTML preprocessing limitations.
-> See report Section 4.6 for full discussion.
+> See report Section 3.7.1 for full discussion.
 
 ### Phase 3 — Advanced Analysis (UCI)
 8. `11_cross_validation.ipynb`
-   - Upload: `X_train.npz`, `y_train.npy`,
-             `X_test.npz`, `y_test.npy`,
-             all 4 UCI JSON result files
+   - Upload: `X_train.npz`, `X_test.npz`,
+             `y_train.npy`, `y_test.npy`,
+             `nb_results.json`, `lr_results.json`,
+             `svm_results.json`, `rf_results.json`
    - Saves: `cv_results.json`
 9. `12_hyperparameter_tuning.ipynb`
    - Upload: all 4 UCI processed files +
@@ -89,29 +89,14 @@ tuning and feature importance on model performance.
               `spam.csv` + `tuning_results.json`
     - Saves: `feature_importance_results.json`
 
-> **Note:** Pre-generated processed files and 
-> results are available on 📁 Google Drive:
-> 1. Dataset: https://drive.google.com/drive/folders/1r_E9ehREhlj2Ru8vNGiMpM_Vgk6NmDR-?usp=drive_link
-> 2. Code Output: https://drive.google.com/drive/folders/187_7veGTZ1chYtzgBRdeXbSS1bePYrq0?usp=drive_link
-
 ## Project Structure
 - `notebooks/` - All Jupyter notebooks by phase
-- `results/` - Pre-generated graphs and metrics
-
-## Key Findings
-- SVM consistently outperformed other models
-- Class imbalance significantly impacts LR recall
-- Dataset quality and preprocessing critically 
-  affect model interpretability
-- SpamAssassin HTML preprocessing revealed 
-  importance of domain-specific data cleaning
-   - Upload: all result files from both datasets
+- `results/graphs/` - Performance comparison charts
+- `results/confusion_matrices/` - Confusion matrices
+- `results/metrics/` - Saved model metrics (JSON)
+- `results/feature_importance/` - Feature importance charts
 
 ## Group Members
 - Rasydan Irfan
-- Arun
+- Arunasalem s/o Elankovan
 - Sherry
-  
-## Project Structure
-- `notebooks/` - Jupyter notebooks for each model
-- `results/` - Pre-generated graphs and confusion matrices
