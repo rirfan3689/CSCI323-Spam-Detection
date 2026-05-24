@@ -50,11 +50,11 @@ Run in order:
    - Upload: all 4 JSON files from step 3
 
 ### Phase 2 — SpamAssassin (Preprocessing Finding)
-5. `08_sa_exploration.ipynb` — Upload: `spam_assassin.csv`
-6. `09_sa_preprocessing.ipynb` — Upload: `spam_assassin.csv`
+5. `08_spamassassin_exploration.ipynb` — Upload: `spam_assassin.csv`
+6. `09_spamassassin_preprocessing.ipynb` — Upload: `spam_assassin.csv`
    - Saves: `sa_X_train.npz`, `sa_X_test.npz`,
              `sa_y_train.npy`, `sa_y_test.npy`
-7. `10_sa_models.ipynb`
+7. `10_spamassassin_models.ipynb`
    - Upload: processed files from step 6
    - Saves: `sa_results.json`
 
